@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Hỏi Đáp</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url('anh-cao-dang-pt-1388-434.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    .navbar {
+      background-color: #f3d6aa;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    .navbar a {
+      color: rgb(12, 0, 0);
+      text-decoration: none;
+      padding: 20px;
+      display: inline-block;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 60px);
+      color: white;
+      text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    }
+
+    .search-box {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px 40px;
+      border-radius: 15px;
+      width: 80%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .search-box h1 {
+      margin-bottom: 20px;
+      font-size: 32px;
+      color: white;
+    }
+
+    .search-box input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+
+    datalist option {
+      font-size: 14px;
+    }
+
+    .hint {
+      margin-top: 15px;
+      font-size: 15px;
+      color: #ddd;
+    }
+
+  </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="trangchu.html">Trang chủ</a>
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="lienhe.html">Liên hệ</a>
+        <a href="gopy.html">Góp ý</a>
+        <a href="hoidap.html">Hỏi đáp</a>
+      </div>
+
+  <div class="container">
+    <div class="search-box">
+      <h1>Hỏi đáp</h1>
+
+      <input list="suggestions" placeholder="Nhập câu hỏi của bạn..." />
+      <datalist id="suggestions">
+        <option value="Địa chỉ ở đâu?">
+        <option value="Học phí như thế nào?">
+        <option value="Nghề nghiệp như thế nào?">
+        <option value="Có bao nhiêu học kỳ?">
+      </datalist>
+
+      <div class="hint"></div>
+    </div>
+  </div>
+
+</body>
+</html>
